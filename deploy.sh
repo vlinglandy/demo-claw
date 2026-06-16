@@ -18,7 +18,7 @@ if [ ! -d "$REPO_DIR/.git" ]; then
   git clone --branch "$BRANCH" "$REPO_URL" "$REPO_DIR"
 else
   cd "$REPO_DIR"
-  git fetch origin "$BRANCH"
+  git fetch origin "$BRANCH:refs/remotes/origin/$BRANCH"
   git reset --hard "origin/$BRANCH"
 fi
 
