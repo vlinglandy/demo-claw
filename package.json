@@ -1,0 +1,11 @@
+{
+  "name": "demo-claw",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "start": "npx serve -l 3010 ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
