@@ -31,6 +31,7 @@ rsync -a --delete \
   --exclude 'demo.pid' \
   --exclude 'demo.log' \
   --exclude 'deploy.sh' \
+  --exclude '.user.ini' \
   "$REPO_DIR/" "$WEBROOT/"
 
 cat > "$WEBROOT/start-python.sh" <<'EOS'
